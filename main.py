@@ -64,7 +64,7 @@ def refresh_cookie():
     else:
         ERROR_CODE = "❌ 无法获取新密钥或者WXREAD_CURL_BASH配置有误，终止运行。"
         logging.error(ERROR_CODE)
-        push(ERROR_CODE, PUSH_METHOD)
+        # push(ERROR_CODE, PUSH_METHOD)
         raise Exception(ERROR_CODE)
 
 refresh_cookie()
